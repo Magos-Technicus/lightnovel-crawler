@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+"""
 import logging
 
 from lncrawl.core.crawler import Crawler
@@ -65,3 +66,7 @@ class CeuNovelCrawler(Crawler):
         soup = self.get_soup(chapter['url'])
         contents = soup.select_one('#contentatt')
         return self.cleaner.extract_contents(contents)
+"""
+
+# this source do not work anymore,the site is down and it needs to be revised if the site changed it's name again or if the site died and will not comeback
+# i preserved the code by making it a comment in the case that Andrey Tokarev figured out what happened with the site faster than i
